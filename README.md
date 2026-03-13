@@ -1,0 +1,48 @@
+# @philiprehberger/schema-diff
+
+Compare JSON schemas and detect breaking changes.
+
+## Installation
+
+```bash
+npm install @philiprehberger/schema-diff
+```
+
+## Usage
+
+```ts
+import { diffSchemas } from '@philiprehberger/schema-diff';
+
+const changes = diffSchemas(
+  { name: { type: 'string' }, email: { type: 'string' } },
+  { name: { type: 'string' }, age: { type: 'number' } },
+);
+
+// [
+//   { path: 'email', type: 'removed', breaking: true, message: 'Removed "email"' },
+//   { path: 'age', type: 'added', breaking: false, message: 'Added "age"' },
+// ]
+
+const hasBreaking = changes.some(c => c.breaking);
+```
+
+## API
+
+| Export | Description |
+|--------|-------------|
+| `diffSchemas(before, after)` | Deep-compare two schemas, returns `SchemaChange[]` |
+
+### `SchemaChange`
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `path` | `string` | Dot-separated path |
+| `type` | `'added' \| 'removed' \| 'changed'` | Change type |
+| `breaking` | `boolean` | Whether the change is breaking |
+| `before` | `unknown` | Previous value |
+| `after` | `unknown` | New value |
+| `message` | `string` | Human-readable description |
+
+## License
+
+MIT
