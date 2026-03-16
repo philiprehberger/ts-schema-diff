@@ -1,6 +1,6 @@
 # @philiprehberger/ts-schema-diff
 
-[![CI](https://github.com/philiprehberger/ts-schema-diff/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/ts-schema-diff/actions/workflows/ci.yml)
+[![CI](https://github.com/philiprehberger/ts-schema-diff/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/ts-schema-diff/actions/workflows/publish.yml)
 [![npm version](https://img.shields.io/npm/v/@philiprehberger/ts-schema-diff.svg)](https://www.npmjs.com/package/@philiprehberger/ts-schema-diff)
 [![License](https://img.shields.io/github/license/philiprehberger/ts-schema-diff)](LICENSE)
 
@@ -46,6 +46,15 @@ const hasBreaking = changes.some(c => c.breaking);
 | `before` | `unknown` | Previous value |
 | `after` | `unknown` | New value |
 | `message` | `string` | Human-readable description |
+
+
+## Development
+
+```bash
+npm install
+npm run build
+npm test
+```
 
 ## License
 
