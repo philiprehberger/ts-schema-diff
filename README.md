@@ -1,5 +1,9 @@
 # @philiprehberger/schema-diff
 
+[![CI](https://github.com/philiprehberger/schema-diff/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/schema-diff/actions/workflows/ci.yml)
+[![npm version](https://img.shields.io/npm/v/@philiprehberger/schema-diff.svg)](https://www.npmjs.com/package/@philiprehberger/schema-diff)
+[![License](https://img.shields.io/github/license/philiprehberger/schema-diff)](LICENSE)
+
 Compare JSON schemas and detect breaking changes.
 
 ## Installation
