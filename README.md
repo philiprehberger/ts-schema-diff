@@ -1,21 +1,21 @@
-# @philiprehberger/schema-diff
+# @philiprehberger/ts-schema-diff
 
-[![CI](https://github.com/philiprehberger/schema-diff/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/schema-diff/actions/workflows/ci.yml)
-[![npm version](https://img.shields.io/npm/v/@philiprehberger/schema-diff.svg)](https://www.npmjs.com/package/@philiprehberger/schema-diff)
-[![License](https://img.shields.io/github/license/philiprehberger/schema-diff)](LICENSE)
+[![CI](https://github.com/philiprehberger/ts-schema-diff/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/ts-schema-diff/actions/workflows/ci.yml)
+[![npm version](https://img.shields.io/npm/v/@philiprehberger/ts-schema-diff.svg)](https://www.npmjs.com/package/@philiprehberger/ts-schema-diff)
+[![License](https://img.shields.io/github/license/philiprehberger/ts-schema-diff)](LICENSE)
 
 Compare JSON schemas and detect breaking changes.
 
 ## Installation
 
 ```bash
-npm install @philiprehberger/schema-diff
+npm install @philiprehberger/ts-schema-diff
 ```
 
 ## Usage
 
 ```ts
-import { diffSchemas } from '@philiprehberger/schema-diff';
+import { diffSchemas } from '@philiprehberger/ts-schema-diff';
 
 const changes = diffSchemas(
   { name: { type: 'string' }, email: { type: 'string' } },
