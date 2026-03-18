@@ -4,7 +4,7 @@
 [![npm version](https://img.shields.io/npm/v/@philiprehberger/ts-schema-diff.svg)](https://www.npmjs.com/package/@philiprehberger/ts-schema-diff)
 [![License](https://img.shields.io/github/license/philiprehberger/ts-schema-diff)](LICENSE)
 
-Compare JSON schemas and detect breaking changes.
+Compare JSON schemas and detect breaking changes
 
 ## Installation
 
