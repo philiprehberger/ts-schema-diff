@@ -1,5 +1,5 @@
 {
-  "name": "@philiprehberger/ts-schema-diff",
+  "name": "@philiprehberger/schema-diff",
   "version": "0.1.4",
   "description": "Compare JSON schemas and detect breaking changes",
   "type": "module",
