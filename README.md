@@ -1,8 +1,8 @@
 # @philiprehberger/schema-diff
 
-[![CI](https://github.com/philiprehberger/schema-diff/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/schema-diff/actions/workflows/ci.yml)
+[![CI](https://github.com/philiprehberger/ts-schema-diff/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/ts-schema-diff/actions/workflows/ci.yml)
 [![npm version](https://img.shields.io/npm/v/@philiprehberger/schema-diff.svg)](https://www.npmjs.com/package/@philiprehberger/schema-diff)
-[![Last updated](https://img.shields.io/github/last-commit/philiprehberger/schema-diff)](https://github.com/philiprehberger/schema-diff/commits/main)
+[![Last updated](https://img.shields.io/github/last-commit/philiprehberger/ts-schema-diff)](https://github.com/philiprehberger/ts-schema-diff/commits/main)
 
 Compare JSON schemas and detect breaking changes
 
@@ -59,11 +59,11 @@ npm test
 
 If you find this project useful:
 
-⭐ [Star the repo](https://github.com/philiprehberger/schema-diff)
+⭐ [Star the repo](https://github.com/philiprehberger/ts-schema-diff)
 
-🐛 [Report issues](https://github.com/philiprehberger/schema-diff/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
+🐛 [Report issues](https://github.com/philiprehberger/ts-schema-diff/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
 
-💡 [Suggest features](https://github.com/philiprehberger/schema-diff/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement)
+💡 [Suggest features](https://github.com/philiprehberger/ts-schema-diff/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement)
 
 ❤️ [Sponsor development](https://github.com/sponsors/philiprehberger)
 
