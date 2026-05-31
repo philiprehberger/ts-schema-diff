@@ -1,6 +1,6 @@
 {
   "name": "@philiprehberger/schema-diff",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "description": "Compare JSON schemas and detect breaking changes",
   "type": "module",
   "main": "./dist/index.cjs",

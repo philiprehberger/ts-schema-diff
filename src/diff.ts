@@ -1,4 +1,4 @@
-import type { SchemaChange, JsonSchema } from './types.js';
+import type { SchemaChange, JsonSchema, DiffOptions } from './types.js';
 
 function isObject(val: unknown): val is Record<string, unknown> {
   return val !== null && typeof val === 'object' && !Array.isArray(val);
@@ -66,8 +66,15 @@ function diffObjects(
   }
 }
 
-export function diffSchemas(before: JsonSchema, after: JsonSchema): SchemaChange[] {
+export function diffSchemas(
+  before: JsonSchema,
+  after: JsonSchema,
+  options?: DiffOptions,
+): SchemaChange[] {
   const changes: SchemaChange[] = [];
   diffObjects(before, after, '', changes);
+  if (options?.breakingOnly) {
+    return changes.filter((c) => c.breaking === true);
+  }
   return changes;
 }

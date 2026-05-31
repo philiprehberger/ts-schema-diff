@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.0
+
+- Add `diffSchemas(before, after, { breakingOnly: true })` option to return only breaking changes
+- CI: publish workflow now runs `npm test` before publishing
+- README: add package card image
+
 ## 0.1.7
 
 - Fix README GitHub URLs to use correct repo name (ts-schema-diff)

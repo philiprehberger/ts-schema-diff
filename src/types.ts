@@ -10,3 +10,7 @@ export interface SchemaChange {
 }
 
 export type JsonSchema = Record<string, unknown>;
+
+export interface DiffOptions {
+  breakingOnly?: boolean;
+}

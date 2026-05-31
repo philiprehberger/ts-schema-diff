@@ -4,6 +4,8 @@
 [![npm version](https://img.shields.io/npm/v/@philiprehberger/schema-diff.svg)](https://www.npmjs.com/package/@philiprehberger/schema-diff)
 [![Last updated](https://img.shields.io/github/last-commit/philiprehberger/ts-schema-diff)](https://github.com/philiprehberger/ts-schema-diff/commits/main)
 
+![@philiprehberger/schema-diff](https://raw.githubusercontent.com/philiprehberger/ts-schema-diff/main/package-card.webp)
+
 Compare JSON schemas and detect breaking changes
 
 ## Installation
@@ -30,11 +32,30 @@ const changes = diffSchemas(
 const hasBreaking = changes.some(c => c.breaking);
 ```
 
+### Filtering Breaking Changes
+
+Pass `{ breakingOnly: true }` to return only the breaking changes:
+
+```ts
+import { diffSchemas } from '@philiprehberger/schema-diff';
+
+const breaking = diffSchemas(
+  { name: { type: 'string' }, email: { type: 'string' } },
+  { name: { type: 'string' }, age: { type: 'number' } },
+  { breakingOnly: true },
+);
+
+// [
+//   { path: 'email', type: 'removed', breaking: true, message: 'Removed "email"' },
+// ]
+```
+
 ## API
 
 | Export | Description |
 |--------|-------------|
 | `diffSchemas(before, after)` | Deep-compare two schemas, returns `SchemaChange[]` |
+| `diffSchemas(before, after, { breakingOnly: true })` | Deep-compare two schemas and return only breaking changes |
 
 ### `SchemaChange`
 
